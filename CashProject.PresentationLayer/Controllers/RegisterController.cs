@@ -31,6 +31,9 @@ namespace CashProject.PresentationLayer.Controllers
                     Name = appUserRegisterDto.Name,
                     Surname = appUserRegisterDto.Surname,
                     Email = appUserRegisterDto.Email,
+                    City = "aaaa",
+                    District = "bbbb",
+                    ImageUrl = "cccc"
                 };
                 var result = await _userManager.CreateAsync(appUser, appUserRegisterDto.Password);
                 if (result.Succeeded)
